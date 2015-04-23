@@ -1,8 +1,4 @@
-package info.androidhive.awesomewallpapers;
-
-import info.androidhive.awesomewallpapers.app.AppController;
-import info.androidhive.awesomewallpapers.helper.NavDrawerListAdapter;
-import info.androidhive.awesomewallpapers.picasa.model.Category;
+package com.teamNikaml.wallpaper.activity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -23,6 +19,11 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
+
+import com.teamNikaml.wallpaper.app.AppController;
+import com.teamNikaml.wallpaper.fragment.GridFragment;
+import com.teamNikaml.wallpaper.helper.NavDrawerListAdapter;
+import com.teamNikaml.wallpaper.picasa.model.Category;
 
 public class MainActivity extends Activity {
 	private static final String TAG = MainActivity.class.getSimpleName();

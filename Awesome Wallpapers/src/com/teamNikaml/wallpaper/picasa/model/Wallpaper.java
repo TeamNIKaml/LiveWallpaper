@@ -1,4 +1,4 @@
-package info.androidhive.awesomewallpapers.picasa.model;
+package com.teamNikaml.wallpaper.picasa.model;
 
 import java.io.Serializable;
 

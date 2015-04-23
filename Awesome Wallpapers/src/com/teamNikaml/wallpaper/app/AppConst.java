@@ -1,4 +1,4 @@
-package info.androidhive.awesomewallpapers.app;
+package com.teamNikaml.wallpaper.app;
 
 
 public class AppConst {

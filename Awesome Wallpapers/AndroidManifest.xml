@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="info.androidhive.awesomewallpapers"
+    package="com.teamNikaml.wallpaper.activity"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -13,13 +13,13 @@
     <uses-permission android:name="android.permission.SET_WALLPAPER" />
 
     <application
-        android:name="info.androidhive.awesomewallpapers.app.AppController"
+        android:name="com.teamNikaml.wallpaper.app.AppController"
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/FreeWallTheme" >
         <activity
-            android:name="info.androidhive.awesomewallpapers.SplashActivity"
+            android:name=".SplashActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait" >
             <intent-filter>
@@ -29,15 +29,15 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="info.androidhive.awesomewallpapers.MainActivity"
+            android:name=".MainActivity"
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="info.androidhive.awesomewallpapers.FullScreenViewActivity"
+            android:name=".FullScreenViewActivity"
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="info.androidhive.awesomewallpapers.SettingsActivity"
+            android:name=".SettingsActivity"
             android:label="@string/action_settings"
             android:screenOrientation="portrait" >
         </activity>

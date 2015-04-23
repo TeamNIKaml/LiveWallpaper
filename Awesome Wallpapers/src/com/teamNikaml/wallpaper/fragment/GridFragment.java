@@ -1,11 +1,4 @@
-package info.androidhive.awesomewallpapers;
-
-import info.androidhive.awesomewallpapers.app.AppConst;
-import info.androidhive.awesomewallpapers.app.AppController;
-import info.androidhive.awesomewallpapers.helper.GridViewAdapter;
-import info.androidhive.awesomewallpapers.picasa.model.Wallpaper;
-import info.androidhive.awesomewallpapers.util.PrefManager;
-import info.androidhive.awesomewallpapers.util.Utils;
+package com.teamNikaml.wallpaper.fragment;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -33,6 +26,14 @@ import com.android.volley.Request.Method;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
+import com.teamNikaml.wallpaper.activity.FullScreenViewActivity;
+import com.teamNikaml.wallpaper.activity.R;
+import com.teamNikaml.wallpaper.app.AppConst;
+import com.teamNikaml.wallpaper.app.AppController;
+import com.teamNikaml.wallpaper.helper.GridViewAdapter;
+import com.teamNikaml.wallpaper.picasa.model.Wallpaper;
+import com.teamNikaml.wallpaper.util.PrefManager;
+import com.teamNikaml.wallpaper.util.Utils;
 
 public class GridFragment extends Fragment {
 	private static final String TAG = GridFragment.class.getSimpleName();

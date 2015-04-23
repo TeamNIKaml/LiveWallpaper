@@ -1,8 +1,4 @@
-package info.androidhive.awesomewallpapers;
-
-import info.androidhive.awesomewallpapers.app.AppController;
-import info.androidhive.awesomewallpapers.picasa.model.Wallpaper;
-import info.androidhive.awesomewallpapers.util.Utils;
+package com.teamNikaml.wallpaper.activity;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -32,6 +28,9 @@ import com.android.volley.toolbox.ImageLoader;
 import com.android.volley.toolbox.ImageLoader.ImageContainer;
 import com.android.volley.toolbox.ImageLoader.ImageListener;
 import com.android.volley.toolbox.JsonObjectRequest;
+import com.teamNikaml.wallpaper.app.AppController;
+import com.teamNikaml.wallpaper.picasa.model.Wallpaper;
+import com.teamNikaml.wallpaper.util.Utils;
 
 public class FullScreenViewActivity extends Activity implements OnClickListener {
 	private static final String TAG = FullScreenViewActivity.class

@@ -1,8 +1,4 @@
-package info.androidhive.awesomewallpapers;
-
-import info.androidhive.awesomewallpapers.app.AppConst;
-import info.androidhive.awesomewallpapers.app.AppController;
-import info.androidhive.awesomewallpapers.picasa.model.Category;
+package com.teamNikaml.wallpaper.activity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -22,6 +18,9 @@ import com.android.volley.Request.Method;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
+import com.teamNikaml.wallpaper.app.AppConst;
+import com.teamNikaml.wallpaper.app.AppController;
+import com.teamNikaml.wallpaper.picasa.model.Category;
 
 public class SplashActivity extends Activity {
 	private static final String TAG = SplashActivity.class.getSimpleName();

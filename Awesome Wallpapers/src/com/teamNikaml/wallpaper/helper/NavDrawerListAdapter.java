@@ -1,7 +1,4 @@
-package info.androidhive.awesomewallpapers.helper;
-
-import info.androidhive.awesomewallpapers.NavDrawerItem;
-import info.androidhive.awesomewallpapers.R;
+package com.teamNikaml.wallpaper.helper;
 
 import java.util.ArrayList;
 
@@ -12,6 +9,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
+
+import com.teamNikaml.wallpaper.activity.NavDrawerItem;
+import com.teamNikaml.wallpaper.activity.R;
 
 public class NavDrawerListAdapter extends BaseAdapter {
 

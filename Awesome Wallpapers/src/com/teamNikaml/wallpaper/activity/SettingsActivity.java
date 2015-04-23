@@ -1,7 +1,5 @@
-package info.androidhive.awesomewallpapers;
+package com.teamNikaml.wallpaper.activity;
 
-import info.androidhive.awesomewallpapers.R;
-import info.androidhive.awesomewallpapers.util.PrefManager;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,6 +7,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.teamNikaml.wallpaper.util.PrefManager;
 
 public class SettingsActivity extends Activity {
 	private PrefManager pref;

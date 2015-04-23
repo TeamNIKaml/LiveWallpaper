@@ -1,4 +1,4 @@
-package info.androidhive.awesomewallpapers;
+package com.teamNikaml.wallpaper.activity;
 
 public class NavDrawerItem {
 

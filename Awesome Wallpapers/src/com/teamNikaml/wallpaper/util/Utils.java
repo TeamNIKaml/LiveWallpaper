@@ -1,6 +1,4 @@
-package info.androidhive.awesomewallpapers.util;
-
-import info.androidhive.awesomewallpapers.R;
+package com.teamNikaml.wallpaper.util;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -15,6 +13,8 @@ import android.util.Log;
 import android.view.Display;
 import android.view.WindowManager;
 import android.widget.Toast;
+
+import com.teamNikaml.wallpaper.activity.R;
 
 public class Utils {
 	private String TAG = Utils.class.getSimpleName();

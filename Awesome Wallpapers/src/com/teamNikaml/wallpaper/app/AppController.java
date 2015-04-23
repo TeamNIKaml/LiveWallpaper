@@ -1,7 +1,5 @@
-package info.androidhive.awesomewallpapers.app;
+package com.teamNikaml.wallpaper.app;
 
-import info.androidhive.awesomewallpapers.util.LruBitmapCache;
-import info.androidhive.awesomewallpapers.util.PrefManager;
 import android.app.Application;
 import android.text.TextUtils;
 
@@ -9,6 +7,8 @@ import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.ImageLoader;
 import com.android.volley.toolbox.Volley;
+import com.teamNikaml.wallpaper.util.LruBitmapCache;
+import com.teamNikaml.wallpaper.util.PrefManager;
 
 public class AppController extends Application {
 

@@ -1,4 +1,4 @@
-package info.androidhive.awesomewallpapers.util;
+package com.teamNikaml.wallpaper.util;
 
 import com.android.volley.toolbox.ImageLoader.ImageCache;
 

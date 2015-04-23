@@ -1,7 +1,4 @@
-package info.androidhive.awesomewallpapers.util;
-
-import info.androidhive.awesomewallpapers.app.AppConst;
-import info.androidhive.awesomewallpapers.picasa.model.Category;
+package com.teamNikaml.wallpaper.util;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -15,6 +12,8 @@ import android.content.SharedPreferences.Editor;
 import android.util.Log;
 
 import com.google.gson.Gson;
+import com.teamNikaml.wallpaper.app.AppConst;
+import com.teamNikaml.wallpaper.picasa.model.Category;
 
 public class PrefManager {
 	private static final String TAG = PrefManager.class.getSimpleName();

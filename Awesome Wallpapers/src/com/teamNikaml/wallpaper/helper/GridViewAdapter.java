@@ -1,8 +1,4 @@
-package info.androidhive.awesomewallpapers.helper;
-
-import info.androidhive.awesomewallpapers.R;
-import info.androidhive.awesomewallpapers.app.AppController;
-import info.androidhive.awesomewallpapers.picasa.model.Wallpaper;
+package com.teamNikaml.wallpaper.helper;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,6 +14,9 @@ import android.widget.RelativeLayout;
 
 import com.android.volley.toolbox.ImageLoader;
 import com.android.volley.toolbox.NetworkImageView;
+import com.teamNikaml.wallpaper.activity.R;
+import com.teamNikaml.wallpaper.app.AppController;
+import com.teamNikaml.wallpaper.picasa.model.Wallpaper;
 
 public class GridViewAdapter extends BaseAdapter {
 
