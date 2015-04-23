@@ -55,14 +55,15 @@ public class MainActivity extends Activity {
 		albumsList = AppController.getInstance().getPrefManger().getCategories();
 
 		// Insert "Recently Added" in navigation drawer first position
-		Category recentAlbum = new Category(null,
-				getString(R.string.nav_drawer_recently_added));
+		Category recentAlbum = new Category(null,"Ronaldo");
 
 		albumsList.add(0, recentAlbum);
 
 		// Loop through albums in add them to navigation drawer adapter
 		for (Category a : albumsList) {
+			if(a.getTitle().equalsIgnoreCase("Ronaldo"))
 			navDrawerItems.add(new NavDrawerItem(a.getId(), a.getTitle()));
+			
 		}
 
 		mDrawerList.setOnItemClickListener(new SlideMenuClickListener());

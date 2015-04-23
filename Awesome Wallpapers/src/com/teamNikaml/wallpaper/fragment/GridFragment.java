@@ -42,7 +42,7 @@ public class GridFragment extends Fragment {
 	private GridView gridView;
 	private int columnWidth;
 	private static final String bundleAlbumId = "albumId";
-	private String selectedAlbumId;
+	private String selectedAlbumId="6140435968831876097";
 	private List<Wallpaper> photosList;
 	private ProgressBar pbLoader;
 	private PrefManager pref;
@@ -88,7 +88,7 @@ public class GridFragment extends Fragment {
 		String url = null;
 		if (selectedAlbumId == null) {
 			// Recently added album url
-			url = AppConst.URL_RECENTLY_ADDED.replace("_PICASA_USER_",
+			url = AppConst.URL_ALBUM_PHOTOS.replace("_PICASA_USER_",
 					pref.getGoogleUserName());
 		} else {
 			// Selected an album, replace the Album Id in the url

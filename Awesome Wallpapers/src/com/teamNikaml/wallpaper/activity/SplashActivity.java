@@ -10,7 +10,6 @@ import org.json.JSONObject;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Window;
 import android.widget.Toast;
 
@@ -40,7 +39,7 @@ public class SplashActivity extends Activity {
 				.replace("_PICASA_USER_", AppController.getInstance()
 						.getPrefManger().getGoogleUserName());
 		
-		Log.d(TAG, "Albums request url: " + url);
+		
 
 		// Preparing volley's json object request
 		JsonObjectRequest jsonObjReq = new JsonObjectRequest(Method.GET, url,
@@ -48,7 +47,7 @@ public class SplashActivity extends Activity {
 
 					@Override
 					public void onResponse(JSONObject response) {
-						Log.d(TAG, "Albums Response: " + response.toString());
+						
 						List<Category> albums = new ArrayList<Category>();
 						try {
 							// Parsing the json response
@@ -74,8 +73,7 @@ public class SplashActivity extends Activity {
 								// add album to list
 								albums.add(album);
 
-								Log.d(TAG, "Album Id: " + albumId
-										+ ", Album Title: " + albumTitle);
+							
 							}
 
 							// Store albums in shared pref
@@ -101,7 +99,7 @@ public class SplashActivity extends Activity {
 
 					@Override
 					public void onErrorResponse(VolleyError error) {
-						Log.e(TAG, "Volley Error: " + error.getMessage());
+					
 
 						// show error toast
 						Toast.makeText(getApplicationContext(),

@@ -14,15 +14,15 @@ public class AppConst {
 	public static final String SDCARD_DIR_NAME = "Awesome Wallpapers";
 
 	// Picasa/Google web album username
-	public static final String PICASA_USER = "freewallpapersapp";
+	public static final String PICASA_USER = "nikhil.vijaykumar@gmail.com";
 
 	// Public albums list url
 	public static final String URL_PICASA_ALBUMS = "https://picasaweb.google.com/data/feed/api/user/_PICASA_USER_?kind=album&alt=json";
 
 	// Picasa album photos url
-	public static final String URL_ALBUM_PHOTOS = "https://picasaweb.google.com/data/feed/api/user/_PICASA_USER_/albumid/_ALBUM_ID_?alt=json";
+	public static final String URL_ALBUM_PHOTOS = "https://picasaweb.google.com/data/feed/api/user/nikhil.vijaykumar@gmail.com/albumid/6140435968831876097?alt=json";
 
 	// Picasa recenlty added photos url
-	public static final String URL_RECENTLY_ADDED = "https://picasaweb.google.com/data/feed/api/user/_PICASA_USER_?kind=photo&alt=json";
+//	public static final String URL_RECENTLY_ADDED = "https://picasaweb.google.com/data/feed/api/user/_PICASA_USER_?kind=photo&alt=json";
 
 }
