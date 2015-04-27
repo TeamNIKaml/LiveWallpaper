@@ -29,17 +29,27 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
-            android:screenOrientation="portrait" >
+            android:name=".WallpaperActivity"
+           >
         </activity>
         <activity
             android:name=".FullScreenViewActivity"
-            android:screenOrientation="portrait" >
+            >
         </activity>
         <activity
             android:name=".SettingsActivity"
             android:label="@string/action_settings"
-            android:screenOrientation="portrait" >
+           >
+        </activity>
+         <activity
+            android:name=".AboutUs"
+             android:label="@string/develop"
+            >
+        </activity>
+         <activity
+            android:name=".CreatedBy"
+             android:label="@string/images_by"
+            >
         </activity>
     </application>
 

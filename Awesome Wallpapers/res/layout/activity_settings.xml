@@ -5,23 +5,7 @@
     android:orientation="vertical"
     android:padding="10dp" >
 
-    <TextView
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:layout_marginTop="15dp"
-        android:text="@string/lbl_google_username"
-        android:textColor="@color/settings_label"
-        android:textSize="16dp" />
-
-    <EditText
-        android:id="@+id/txtGoogleUsername"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:background="@drawable/edittext_rounded_corner"
-        android:inputType="text"
-        android:singleLine="true" />
+    
 
     <TextView
         android:layout_width="fill_parent"
@@ -29,13 +13,14 @@
         android:layout_marginBottom="8dp"
         android:text="@string/lbl_no_grid_columns"
         android:textColor="@color/settings_label"
-        android:textSize="16dp" />
+        android:textSize="@dimen/textSize_edit_text" />
 
     <EditText
         android:id="@+id/txtNoOfColumns"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
+         android:textSize="@dimen/textSize_edit_text"
         android:background="@drawable/edittext_rounded_corner"
         android:inputType="number"
         android:singleLine="true" />
@@ -46,7 +31,7 @@
         android:layout_marginBottom="8dp"
         android:text="@string/lbl_gallery_name"
         android:textColor="@color/settings_label"
-        android:textSize="16dp" />
+         android:textSize="@dimen/textSize_edit_text" />
 
     <EditText
         android:id="@+id/txtGalleryName"
@@ -54,7 +39,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="25dp"
         android:background="@drawable/edittext_rounded_corner"
-        android:singleLine="true" />
+        android:singleLine="true" android:inputType=""/>
 
     <Button
         android:id="@+id/btnSave"
@@ -65,6 +50,6 @@
         android:paddingRight="30dp"
         android:text="@string/lbl_btn_save"
         android:textColor="@color/white"
-        android:textSize="18dp" />
+        android:textSize="@dimen/textSize_edit_text" />
 
 </LinearLayout>

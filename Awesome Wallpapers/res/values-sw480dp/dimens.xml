@@ -1,0 +1,8 @@
+<resources>
+
+    <dimen name="about_margin_left">52dp</dimen>
+    <dimen name="about_margin_right">52dp</dimen>
+    <dimen name="textSize_edit_text">22sp</dimen>
+    <dimen name="about_margin_top">15dp</dimen>
+
+</resources>

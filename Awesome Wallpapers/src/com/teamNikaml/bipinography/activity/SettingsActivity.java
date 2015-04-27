@@ -12,7 +12,7 @@ import com.teamNikaml.bipinography.util.PrefManager;
 
 public class SettingsActivity extends Activity {
 	private PrefManager pref;
-	private TextView txtGoogleUsername, txtNoOfGridColumns, txtGalleryName;
+	private TextView  txtNoOfGridColumns, txtGalleryName;
 	private Button btnSave;
 
 	@Override
@@ -20,7 +20,7 @@ public class SettingsActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_settings);
 
-		txtGoogleUsername = (TextView) findViewById(R.id.txtGoogleUsername);
+		
 		txtNoOfGridColumns = (TextView) findViewById(R.id.txtNoOfColumns);
 		txtGalleryName = (TextView) findViewById(R.id.txtGalleryName);
 		btnSave = (Button) findViewById(R.id.btnSave);
@@ -29,7 +29,7 @@ public class SettingsActivity extends Activity {
 
 		// Display edittext values stored in shared preferences
 		// Google username
-		txtGoogleUsername.setText(pref.getGoogleUserName());
+		
 
 		// Number of grid columns
 		txtNoOfGridColumns.setText(String.valueOf(pref.getNoOfGridColumns()));
@@ -45,14 +45,7 @@ public class SettingsActivity extends Activity {
 
 				// Validating the data before saving to shared preferences
 				// validate google username
-				String googleUsername = txtGoogleUsername.getText().toString()
-						.trim();
-				if (googleUsername.length() == 0) {
-					Toast.makeText(getApplicationContext(),
-							getString(R.string.toast_enter_google_username),
-							Toast.LENGTH_LONG).show();
-					return;
-				}
+			
 
 				// validate number of grid columns
 				String no_of_columns = txtNoOfGridColumns.getText().toString()
@@ -74,15 +67,13 @@ public class SettingsActivity extends Activity {
 				}
 
 				// Check for setting changes
-				if (!googleUsername.equalsIgnoreCase(pref.getGoogleUserName())
-						|| !no_of_columns.equalsIgnoreCase(String.valueOf(pref
+				if (!no_of_columns.equalsIgnoreCase(String.valueOf(pref
 								.getNoOfGridColumns()))
 						|| !galleryName.equalsIgnoreCase(pref.getGalleryName())) {
 					// User changed the settings
 					// save the changes and launch SplashScreen to initialize
 					// the app again
-					pref.setGoogleUsername(googleUsername);
-					pref.setNoOfGridColumns(Integer.parseInt(no_of_columns));
+				pref.setNoOfGridColumns(Integer.parseInt(no_of_columns));
 					pref.setGalleryName(galleryName);
 
 					// start the app from SplashScreen

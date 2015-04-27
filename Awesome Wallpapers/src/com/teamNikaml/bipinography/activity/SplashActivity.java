@@ -82,7 +82,7 @@ public class SplashActivity extends Activity {
 
 							// String the main activity
 							Intent intent = new Intent(getApplicationContext(),
-									MainActivity.class);
+									WallpaperActivity.class);
 							startActivity(intent);
 							// closing spalsh activity
 							finish();
@@ -113,7 +113,7 @@ public class SplashActivity extends Activity {
 								.getCategories().size() > 0) {
 							// String the main activity
 							Intent intent = new Intent(getApplicationContext(),
-									MainActivity.class);
+									WallpaperActivity.class);
 							startActivity(intent);
 							// closing spalsh activity
 							finish();
