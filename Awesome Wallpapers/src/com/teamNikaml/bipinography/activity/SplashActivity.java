@@ -19,6 +19,7 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.teamNikaml.bipinography.app.AppConst;
 import com.teamNikaml.bipinography.app.AppController;
+import com.teamNikaml.bipinography.helper.AppRater;
 import com.teamNikaml.bipinography.picasa.model.Category;
 
 public class SplashActivity extends Activity {
@@ -33,6 +34,9 @@ public class SplashActivity extends Activity {
 		getWindow().requestFeature(Window.FEATURE_ACTION_BAR);
 		getActionBar().hide();
 		setContentView(R.layout.activity_splash);
+		
+		AppRater.app_launched(this);
+		
 
 		// Picasa request to get list of albums
 		String url = AppConst.URL_PICASA_ALBUMS

@@ -7,6 +7,7 @@ import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -113,6 +114,14 @@ public class WallpaperActivity extends Activity {
 			startActivity(new Intent(getApplicationContext(), CreatedBy.class));
 
 			break;
+			
+		case R.id.menu_other_apps:
+			//startActivity(new Intent(getApplicationContext(), CreatedBy.class));
+			//market://search?q=pub:<publisher_name>
+			startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://search?q=pub:Nikhil Vijayakumar")));
+			break;
+			
+			
 
 		}
 		return true;
